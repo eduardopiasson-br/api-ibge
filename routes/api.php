@@ -1,8 +1,16 @@
 <?php
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
+// Main condition
+Route::get('/cities-main/{uf}', function ($uf) {
+    $path = config('app.main_api_ibge') . $uf;
+    return Http::get($path);
+});
+
+// Alternative condition
+Route::get('/cities-alternative/{uf}', function ($uf) {
+    $path = config('app.alternative_api_ibge') . $uf;
+    return Http::get($path);
+});
