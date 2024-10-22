@@ -124,6 +124,6 @@ return [
     ],
 
     // define enviroment api's ibge
-    'main_api_ibge' => env('MAIN_PROVIDER_API'),
-    'alternative_api_ibge' => env('MAIN_PROVIDER_API'),
+    'brasil_api_provider' => env('BRASIL_API_PROVIDER'),
+    'ibge_api_provider' => env('IBGE_API_PROVIDER'),
 ];
