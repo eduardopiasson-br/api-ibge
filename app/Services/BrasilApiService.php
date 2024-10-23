@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Helpers\PaginationHelper;
 use Illuminate\Support\Facades\Http;
 
 class BrasilApiService
@@ -18,7 +19,9 @@ class BrasilApiService
         $response = Http::get($this->apiUrl . $uf);
 
         if ($response->successful()) {
-            return $response->json();
+            $cities = $response->json();
+
+            return response()->json(PaginationHelper::paginate($cities));
         }
 
         throw new \Exception('Erro ao obter municípios da Brasil API');
