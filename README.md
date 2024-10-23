@@ -1,11 +1,5 @@
 <p align="center">
-    <a href="https://laravel.com" target="_blank">
-        <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
-    </a>
-</p>
-
-<p align="center">
-    <img src="https://img.icons8.com/ios-filled/50/000000/map-marker.png" width="50" alt="Location Icon">
+    <img src="https://img.icons8.com/ios-filled/50/FFFFFF/map-marker.png" width="150" alt="Location Icon">
 </p>
 
 <h2 align="center">Project Purpose</h2>
@@ -28,6 +22,7 @@ To run the project, simply start the container using Laravel Sail. You can do th
 
 ```bash
 sail up -d
+```
 
 ## Learning Laravel
 
