@@ -21,6 +21,7 @@
 To run the project, simply start the container using Laravel Sail. You can do this by running the following command in an environment with Docker Compose installed:
 
 ```bash
+sail composer install
 sail up -d
 ```
 
